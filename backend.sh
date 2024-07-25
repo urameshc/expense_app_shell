@@ -2,6 +2,9 @@
 
 source ./common.sh
 
+echo "Please enter DB password:"
+read -s mysql_root_password
+
 mkdir -p /app &>>$LOGFILE
 VALIDATE $? "Creating App Directory"
 
